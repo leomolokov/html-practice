@@ -48,7 +48,7 @@
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"editor.tabSize": 2, // размер таба
-	"editor.formatOnSave": true, // форматировать код при сохранении
+	//"editor.formatOnSave": true, // форматировать код при сохранении
 	"explorer.compactFolders": false, // компактные папки
 	"editor.smoothScrolling": true, // плавный скролл
 	"workbench.list.smoothScrolling": true, // плавный скролл
@@ -57,5 +57,12 @@
 	"terminal.integrated.cursorBlinking": true, // мигающей курсор
 	"editor.glyphMargin": false,
 	"editor.linkedEditing": true,
-	"editor.padding.top": 15 // отступ сверху кода
+	"editor.padding.top": 15, // отступ сверху кода
+
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact"
+	},
+
+	"http.proxySupport": "fallback"
 }
