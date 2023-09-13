@@ -64,5 +64,6 @@
 		"typescript": "typescriptreact"
 	},
 
-	"http.proxySupport": "fallback"
+	"http.proxySupport": "fallback",
+	"livePreview.defaultPreviewPath": "/string-elements.html"
 }
