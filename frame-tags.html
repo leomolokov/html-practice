@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" author="leo molokov">
+    <title>Frame tags</title>
+  </head>
+  <body>
+    <p>
+      Frames divide the browser window into separate areas located close to each other. Each of these areas loads an independent web page defined using the <frame> tag. Frames are used to divide a web page into two or more documents, which typically contain the site's navigation and content. The frame mechanism allows you to open a document in one frame from a link clicked in a completely different frame. It is also acceptable to use a nested structure of elements; this allows you to split frames into small areas.
+    </p>
+    <p>
+      &lt;frame&gt; tag defines features of a separate frame on which the browser's page is divided.
+    </p>
+    <p>
+      &lt;frameset&gt; tag replaces &lt;body&gt; tag on a webpage and forms the frame structure.
+    </p>
+    <p>
+      &lt;iframe&gt; tag creates a floating frame that is placed inside of a regular document. It allows to load any independent docs into a area with given measurements.
+    </p>
+    <p>
+      Let's observe an example: <br>
+      <link rel="stylesheet" href="">
+    </p>
+  </body>
+  <frameset rows="80, *" cols="*">
+        <frame src="1st-web-paeg.html">
+  </frameset>
+</html>
