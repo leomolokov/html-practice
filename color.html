@@ -4,6 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="leo molokov">
     <title>Color</title>
+    <style>
+    body { 
+     font-family: Arial, sans-serif; /* Рубленый шрифт */ 
+    }
+    .letter { 
+     color: red; /* Красный цвет символов */ 
+     font-size: 150%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+     position: relative; /* Относительное позиционирование */ 
+     top: 2px; /* Сдвиг сверху */ 
+    }
+  </style> 
   </head>
   <body>
     <p>
@@ -97,6 +109,22 @@
     </p>
     <p>
       To avoid confusion in defining the number system, a hexadecimal number is preceded by a hash symbol #, for example #aa69cc. In this case, the case does not matter, so it is permissible to write #F0F0F0 or #f0f0f0.
+    </p>
+    <p>
+      A typical color used in HTML looks like this: <b>&lt;body bgcolor="#fa8e47"&gt;</b>
+    </p>
+    <p>
+      The background color is defined here as #fa8e47. The # (hashtag) symbol before the number means that it's hexadecimal. First two digits (fa) define a RED part of a color, the digits from 3rd to 4th (8e) - green, and the last two digits (47) - blue. At the end we get this color:
+    </p>
+    <table style="width: 264px; margin: auto">
+      <tbody>
+        <tr>
+          <td style="background: #fa0000; color: #fff">FA</td><td>+</td><td style="background: #008e00; color: #fff">8E</td><td>+</td>
+          <td style="background: #000047; color: #fff">47</td><td>=</td>
+          <td style="background: #FA8E47">FA8E47</td></tr></tbody>
+    </table>
+    <p>
+      Each of the three colors - red, green and blue - can take values from 00 to FF, resulting in a total of 256 shades. Thus, the total number of colors can be 256x256x256 = 16,777,216 combinations. A color model based on red, green and blue components is called <span class="letter">RGB</span> (red, green, blue; red, green, blue). This model is additive (from add - add), in which the addition of all three components forms the color white.
     </p>
   </body>
 </html>
