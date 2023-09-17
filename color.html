@@ -30,7 +30,7 @@
     <h1>Hexadecimal colors</h1>
     <p>
       HTML uses hexadecimal numbers to specify colors. The hexadecimal system, unlike the decimal system, is based, as its name suggests, on the number 16. The numbers will be as follows: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F. Numbers from 10 to 15 are replaced by Latin letters. A table below shows the correspondence between decimal and hexadecimal numbers. <br>
-      <table border="3" align="center" cellpadding="3" cellspacing="4">
+      <table border="3" align="center" cellpadding="2" cellspacing="4">
         <tr>
           <th>Decimal</th>
           <td>0</td>
@@ -73,7 +73,7 @@
     </p>
     <p>
       Numbers greater than 15 in the hexadecimal system are formed by combining two numbers into one (see further table). For example, the number 255 in decimal corresponds to the number FF in hexadecimal.
-      <table border="3" align="center" cellpadding="3" cellspacing="4">
+      <table border="3" align="center" cellpadding="1,5" cellspacing="4">
         <tr>
           <th>Decimal</th>
           <td>16</td>
@@ -135,6 +135,111 @@
         <li>Yellow (#FFFF00) is made by mixing red and green. This is clearly visible on the color wheel (Fig. 6.1), which presents the primary colors (red, green, blue) and complementary or additional ones. These include yellow, cyan and violet (also called magenta). In general, any color can be obtained by mixing colors close to it. Thus, cyan (#00FFFF) is obtained by combining blue and green.</li>
       </ul>
       <img src="images/color_circle.jpg" alt="color circle" height="200" align="center">
+    </p>
+    <p>
+      Colors based on hexadecimal values do not have to be empirically selected. For this purpose, a graphic editor that can work with different color models, for example, Adobe Photoshop, is suitable. In next Fig shows the window for selecting a color in this program; the resulting hexadecimal value of the current color is outlined with a line. You can copy and paste it into your code.
+    </p>
+    <p>
+      For those who work in VisualStudioCode there's an extension to work comfortably with color and it's called Color Picker.
+    </p>
+    <img src="images/color_picker.png" alt="color picker" height="200" width="450" align="center">
+    <h1>
+      Web colors
+    </h1>
+    <p>
+      If you set the monitor's color rendering quality to 8 bits (256 colors), then the same color can be displayed differently in different browsers. This is due to the way graphics are displayed, when the browser works with its own palette and cannot show a color that is not in its palette. In this case, the color is replaced by a combination of pixels of other, close to it, colors that imitate the given one. To ensure that the color remains the same across different browsers, a palette of so-called web colors was introduced. Web colors are those colors for which each component - red, green and blue - is set to one of six values - 0 (00), 51 (33), 102 (66), 153 (99), 204 (CC), 255 (FF). The hexadecimal value of this component is indicated in brackets. The total number of colors from all possible combinations gives 6x6x6 - 216 colors. An example web color is #33FF66.
+    </p>
+    <p>
+      The main feature of web color is that it appears the same in all browsers. At the moment, the relevance of web colors is very small due to the improvement in the quality of monitors and the expansion of their capabilities.
+    </p>
+    <h1>
+      Colors by names
+    </h1>
+    <p>
+      To avoid having to remember a set of numbers, you can use the names of commonly used colors instead. The table below shows the names of popular color names.
+    </p>
+    <table border="1" width="450" align="center">
+      <tr>
+        <th>Name</th>
+        <th>Color</th>
+        <th>Hexadecimal value</th>
+      </tr>
+        <td>black</td>
+        <td style="background: black"></td>
+        <td>#000000</td>
+      <tr>
+        <td>blue</td>
+        <td style="background: blue;"></td>
+        <td>#0000FF</td>
+      </tr>
+      <tr>
+        <td>fuchsia</td>
+        <td style="background: fuchsia"></td>
+        <td>FF00FF</td>
+      </tr>
+      <tr>
+        <td>gray</td>
+        <td style="background: gray"></td>
+        <td>#808080</td>
+      </tr>
+      <tr>
+        <td>green</td>
+        <td style="background: green"></td>
+        <td>#008000</td>
+      </tr>
+      <tr>
+        <td>lime</td>
+        <td style="background: #00ff00"></td>
+        <td>#00FF00</td>
+      </tr>
+      <tr>
+        <td>maroon</td>
+        <td style="background: maroon"></td>
+        <td>#800000</td>
+      </tr>
+      <tr>
+        <td>navy</td>
+        <td style="background: navy"></td>
+        <td>#00080</td>
+      </tr>
+      <tr>
+        <td>olive</td>
+        <td style="background: olive"></td>
+        <td>#808000</td>
+      </tr>
+      <tr>
+        <td>purple</td>
+        <td style="background: purple"></td>
+        <td>#800080</td>
+      </tr>
+      <tr>
+        <td>red</td>
+        <td style="background: red"></td>
+        <td>#FF0000</td>
+      </tr>
+      <tr>
+        <td>silver</td>
+        <td style="background: silver"></td>
+        <td>#C0C0C0</td>
+      </tr>
+      <tr>
+        <td>teal</td>
+        <td style="background: teal"></td>
+        <td>#008080</td>
+      </tr>
+      <tr>
+        <td>white</td>
+        <td style="background: white"></td>
+        <td>#FFFFFF</td>
+      </tr>
+      <tr>
+        <td>yellow</td>
+        <td style="background: yellow;"></td>
+        <td>#FFFF00</td>
+      </tr>
+    </table>
+    <p>
+      It doesn't matter whether you specify a color by its name or by using hexadecimal numbers. These methods are equal in their effect.
     </p>
   </body>
 </html>
