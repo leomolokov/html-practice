@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="author" content="leo molokov">
+    <link rel="stylesheet" href="all.css">
     <title>Color</title>
     <style>
     body { 
@@ -125,6 +126,15 @@
     </table>
     <p>
       Each of the three colors - red, green and blue - can take values from 00 to FF, resulting in a total of 256 shades. Thus, the total number of colors can be 256x256x256 = 16,777,216 combinations. A color model based on red, green and blue components is called <span class="letter">RGB</span> (red, green, blue; red, green, blue). This model is additive (from add - add), in which the addition of all three components forms the color white.
+    </p>
+    <p>
+      To make it easier to navigate hexadecimal colors, take into account some rules:<br>
+      <ul>
+        <li>If the values of the color components are the same (for example: #D6D6D6), then the result will be a gray tint. The higher the number, the lighter the color, with values ranging from #000000 (black) to #FFFFFF (white).</li>
+        <li>A bright red color is formed if the red component is made maximum (FF) and the remaining components are set to zero. A color with a value of #FF0000 is the reddest possible red shade. The same is true for green (#00FF00) and blue (#0000FF).</li>
+        <li>Yellow (#FFFF00) is made by mixing red and green. This is clearly visible on the color wheel (Fig. 6.1), which presents the primary colors (red, green, blue) and complementary or additional ones. These include yellow, cyan and violet (also called magenta). In general, any color can be obtained by mixing colors close to it. Thus, cyan (#00FFFF) is obtained by combining blue and green.</li>
+      </ul>
+      <img src="images/color_circle.jpg" alt="color circle" height="200" align="center">
     </p>
   </body>
 </html>
