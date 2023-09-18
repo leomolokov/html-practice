@@ -10,5 +10,45 @@
     <p>
       An address is the path to a document, for example, a graphic file. The address is required in cases where a link is made to a web page or a specific file is downloaded. For example, in the <img> tag, the address is used as the value of the src attribute; it specifies the path to the file with the image.
     </p>
+    <p>
+      A synonym for an address is URL (Universal Resource Locator), a distinction is made between absolute and relative addresses.
+    </p>
+    <h1>
+      Absolute Addresses
+    </h1>
+    <p>
+      Such addresses work anywhere and everywhere, regardless of the name of the site or web page where the URL is set, and always begin with an indication of the data transfer protocol. For web pages, this is usually HTTP (HyperText Transfer Protocol), so absolute addresses begin with the http:// keyword. <br>
+      <u>http://www.w3.org/TR/html4/strict.dtd</u>
+    </p>
+    <p>
+      Absolute addresses are used primarily to point to another network resource and are rarely used within the same site.
+    </p>
+    <h1>Relative Addresses</h1>
+    <p>
+      Relative addresses are specified from the root of the site or current document. For example, the code &lt;img src="pic.gif"&gt; means to load a graphic file named pic.gif, which is located in the same folder as the web page itself. Next, let's look at a few examples of such addresses.
+    </p>
+    <p>
+      /
+      <br>
+      The address usually points to the index.html file, which is located at the root of the site. If the index.html file is missing, the browser will typically show a list of files located in the given directory. The file name does not have to be index.html, this parameter can be changed through the web server settings - this is the name of the program that analyzes requests coming from the browser and transmits to it the documents shown to the user.
+    </p>
+    <p>
+      /images/pic.gif <br>
+      A slash (/) before the address indicates that addressing starts from the root of the site. The link leads to the picture pic.gif, which is located in the images folder. And that, in turn, is located at the root of the site.
+    </p>
+    <p>
+      ../help/me.html <br>
+      Two dots in front of the name tell the browser to go one level higher in the list of site directories and there “look” for the me.html file in the help folder.
+    </p>
+    <p>
+      manual/info.html <br>
+      If there are no additional characters before the folder name, such as dots or slashes, then the folder is located inside the current directory, and the info.html file is already located in it.
+    </p>
+    <p>
+      Addresses relative to the site root like /demo/ work only under the control of a web server and are not applicable on the local computer.
+    </p>
+    <p>
+      Sometimes you can find a path in the link address in the form ./file/doc.html. A dot with a slash means that the countdown is from the current folder. Such an entry is redundant and can be shortened to file/doc.html.
+    </p>
   </body>
 </html>
